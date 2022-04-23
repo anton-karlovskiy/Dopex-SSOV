@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "../math/PRBMathSD59x18.sol";
+import "../libraries/PRBMathSD59x18.sol";
 import "../../interfaces/IPriceOracleAggregator.sol";
 
 interface IUniswapV2Pair {

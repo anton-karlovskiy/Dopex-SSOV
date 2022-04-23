@@ -1,0 +1,226 @@
+{
+  "address": "0x87209686d0f085fD35B084410B99241Dbc03fb4f",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "strike",
+          "type": "uint256"
+        }
+      ],
+      "name": "getVolatility",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "strikeToVols",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "strikes",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "vols",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "updateVolatility",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x7cd35a918c0a2ddee70506956798a2cac2b49e4d96541a4169384ff79174b142",
+  "receipt": {
+    "to": null,
+    "from": "0xDe485812E28824e542B9c2270B6b8eD9232B7D0b",
+    "contractAddress": "0x87209686d0f085fD35B084410B99241Dbc03fb4f",
+    "transactionIndex": 0,
+    "gasUsed": "13685798",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000020000000000000000008800000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000200000200000000000000000000000000002000000000000000100000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xd2c9d3d2964181ee681918b72474ec353dfb9b033882b7d0286074b379bac924",
+    "transactionHash": "0x7cd35a918c0a2ddee70506956798a2cac2b49e4d96541a4169384ff79174b142",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 3572524,
+        "transactionHash": "0x7cd35a918c0a2ddee70506956798a2cac2b49e4d96541a4169384ff79174b142",
+        "address": "0x87209686d0f085fD35B084410B99241Dbc03fb4f",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x000000000000000000000000de485812e28824e542b9c2270b6b8ed9232b7d0b"
+        ],
+        "data": "0x",
+        "logIndex": 0,
+        "blockHash": "0xd2c9d3d2964181ee681918b72474ec353dfb9b033882b7d0286074b379bac924"
+      }
+    ],
+    "blockNumber": 3572524,
+    "cumulativeGasUsed": "10057318",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "9f019c780365cc89b28699edb2809ea0",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"strike\",\"type\":\"uint256\"}],\"name\":\"getVolatility\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"strikeToVols\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"strikes\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"vols\",\"type\":\"uint256[]\"}],\"name\":\"updateVolatility\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getVolatility(uint256)\":{\"returns\":{\"_0\":\"volatility\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"},\"updateVolatility(uint256[],uint256[])\":{\"params\":{\"strikes\":\"strikes\",\"vols\":\"volatilities\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getVolatility(uint256)\":{\"notice\":\"Gets the volatility of dpx\"},\"updateVolatility(uint256[],uint256[])\":{\"notice\":\"Updates the volatility\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/oracle/ETHVolatilityOracle.sol\":\"ETHVolatilityOracle\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.0 (access/Ownable.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor() {\\n        _transferOwnership(_msgSender());\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby removing any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        _transferOwnership(address(0));\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        _transferOwnership(newOwner);\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Internal function without access restriction.\\n     */\\n    function _transferOwnership(address newOwner) internal virtual {\\n        address oldOwner = _owner;\\n        _owner = newOwner;\\n        emit OwnershipTransferred(oldOwner, newOwner);\\n    }\\n}\\n\",\"keccak256\":\"0xa1b27b3f44ff825974e5268e8f63ad3b03add5b464880d860fbb8cae043e17f7\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.0 (utils/Context.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0x7736c187e6f1358c1ea9350a2a21aa8528dec1c2f43b374a9067465a3a51f5d3\",\"license\":\"MIT\"},\"contracts/interfaces/IETHVolatilityOracle.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity ^0.8.0;\\n\\ninterface IETHVolatilityOracle {\\n    function getVolatility(uint256 strike) external returns (uint256);\\n}\\n\",\"keccak256\":\"0x70ff265eab8c85ac6919e99aa3c2d4e67839b2cdd8facfcd2b015f08f40618ff\",\"license\":\"UNLICENSED\"},\"contracts/oracle/ETHVolatilityOracle.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity ^0.8.0;\\n\\n// Contracts\\nimport {Ownable} from '@openzeppelin/contracts/access/Ownable.sol';\\n\\n// Interfaces\\nimport {IETHVolatilityOracle} from '../interfaces/IETHVolatilityOracle.sol';\\n\\ncontract ETHVolatilityOracle is Ownable, IETHVolatilityOracle {\\n    /*==== PUBLIC VARS ====*/\\n\\n    mapping(uint256 => uint256) public strikeToVols;\\n\\n    /*==== SETTER FUNCTIONS (ONLY OWNER) ====*/\\n\\n    /**\\n     * @notice Updates the volatility\\n     * @param strikes strikes\\n     * @param vols volatilities\\n     */\\n    function updateVolatility(uint256[] memory strikes, uint256[] memory vols)\\n        external\\n        onlyOwner\\n    {\\n        require(\\n            strikes.length == vols.length,\\n            'ETHVolatilityOracle: Input lengths must match'\\n        );\\n\\n        for (uint256 i = 0; i < strikes.length; i++) {\\n            require(vols[i] > 0, 'ETHVolatilityOracle: Volatility cannot be 0');\\n            strikeToVols[strikes[i]] = vols[i];\\n        }\\n    }\\n\\n    /*==== VIEWS ====*/\\n\\n    /**\\n     * @notice Gets the volatility of dpx\\n     * @return volatility\\n     */\\n    function getVolatility(uint256 strike)\\n        external\\n        view\\n        override\\n        returns (uint256)\\n    {\\n        require(\\n            strikeToVols[strike] != 0,\\n            'ETHVolatilityOracle: volatility == 0'\\n        );\\n\\n        return strikeToVols[strike];\\n    }\\n}\\n\",\"keccak256\":\"0x0a59070f59f8d81add5b2235c9df33dc795784ade336ff431c60754791fbce01\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061001a3361001f565b61006f565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6106208061007e6000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c80631e773f90146100675780632fe92c091461009a578063715018a6146100af5780638da5cb5b146100b7578063c189c19b146100d2578063f2fde38b146100e5575b600080fd5b610087610075366004610418565b60016020526000908152604090205481565b6040519081526020015b60405180910390f35b6100ad6100a83660046104e2565b6100f8565b005b6100ad61027d565b6000546040516001600160a01b039091168152602001610091565b6100876100e0366004610418565b6102b3565b6100ad6100f3366004610546565b61032d565b6000546001600160a01b0316331461012b5760405162461bcd60e51b815260040161012290610576565b60405180910390fd5b80518251146101925760405162461bcd60e51b815260206004820152602d60248201527f455448566f6c6174696c6974794f7261636c653a20496e707574206c656e677460448201526c0d0e640daeae6e840dac2e8c6d609b1b6064820152608401610122565b60005b82518110156102785760008282815181106101b2576101b26105ab565b60200260200101511161021b5760405162461bcd60e51b815260206004820152602b60248201527f455448566f6c6174696c6974794f7261636c653a20566f6c6174696c6974792060448201526a063616e6e6f7420626520360ac1b6064820152608401610122565b81818151811061022d5761022d6105ab565b60200260200101516001600085848151811061024b5761024b6105ab565b60200260200101518152602001908152602001600020819055508080610270906105c1565b915050610195565b505050565b6000546001600160a01b031633146102a75760405162461bcd60e51b815260040161012290610576565b6102b160006103c8565b565b60008181526001602052604081205461031a5760405162461bcd60e51b8152602060048201526024808201527f455448566f6c6174696c6974794f7261636c653a20766f6c6174696c6974792060448201526303d3d20360e41b6064820152608401610122565b5060009081526001602052604090205490565b6000546001600160a01b031633146103575760405162461bcd60e51b815260040161012290610576565b6001600160a01b0381166103bc5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610122565b6103c5816103c8565b50565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b60006020828403121561042a57600080fd5b5035919050565b634e487b7160e01b600052604160045260246000fd5b600082601f83011261045857600080fd5b8135602067ffffffffffffffff8083111561047557610475610431565b8260051b604051601f19603f8301168101818110848211171561049a5761049a610431565b6040529384528581018301938381019250878511156104b857600080fd5b83870191505b848210156104d7578135835291830191908301906104be565b979650505050505050565b600080604083850312156104f557600080fd5b823567ffffffffffffffff8082111561050d57600080fd5b61051986838701610447565b9350602085013591508082111561052f57600080fd5b5061053c85828601610447565b9150509250929050565b60006020828403121561055857600080fd5b81356001600160a01b038116811461056f57600080fd5b9392505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b634e487b7160e01b600052603260045260246000fd5b60006000198214156105e357634e487b7160e01b600052601160045260246000fd5b506001019056fea2646970667358221220b4b548c7e79001888410cda47e306b453ec13dce793be41b556550ab39de4ea064736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c80631e773f90146100675780632fe92c091461009a578063715018a6146100af5780638da5cb5b146100b7578063c189c19b146100d2578063f2fde38b146100e5575b600080fd5b610087610075366004610418565b60016020526000908152604090205481565b6040519081526020015b60405180910390f35b6100ad6100a83660046104e2565b6100f8565b005b6100ad61027d565b6000546040516001600160a01b039091168152602001610091565b6100876100e0366004610418565b6102b3565b6100ad6100f3366004610546565b61032d565b6000546001600160a01b0316331461012b5760405162461bcd60e51b815260040161012290610576565b60405180910390fd5b80518251146101925760405162461bcd60e51b815260206004820152602d60248201527f455448566f6c6174696c6974794f7261636c653a20496e707574206c656e677460448201526c0d0e640daeae6e840dac2e8c6d609b1b6064820152608401610122565b60005b82518110156102785760008282815181106101b2576101b26105ab565b60200260200101511161021b5760405162461bcd60e51b815260206004820152602b60248201527f455448566f6c6174696c6974794f7261636c653a20566f6c6174696c6974792060448201526a063616e6e6f7420626520360ac1b6064820152608401610122565b81818151811061022d5761022d6105ab565b60200260200101516001600085848151811061024b5761024b6105ab565b60200260200101518152602001908152602001600020819055508080610270906105c1565b915050610195565b505050565b6000546001600160a01b031633146102a75760405162461bcd60e51b815260040161012290610576565b6102b160006103c8565b565b60008181526001602052604081205461031a5760405162461bcd60e51b8152602060048201526024808201527f455448566f6c6174696c6974794f7261636c653a20766f6c6174696c6974792060448201526303d3d20360e41b6064820152608401610122565b5060009081526001602052604090205490565b6000546001600160a01b031633146103575760405162461bcd60e51b815260040161012290610576565b6001600160a01b0381166103bc5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610122565b6103c5816103c8565b50565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b60006020828403121561042a57600080fd5b5035919050565b634e487b7160e01b600052604160045260246000fd5b600082601f83011261045857600080fd5b8135602067ffffffffffffffff8083111561047557610475610431565b8260051b604051601f19603f8301168101818110848211171561049a5761049a610431565b6040529384528581018301938381019250878511156104b857600080fd5b83870191505b848210156104d7578135835291830191908301906104be565b979650505050505050565b600080604083850312156104f557600080fd5b823567ffffffffffffffff8082111561050d57600080fd5b61051986838701610447565b9350602085013591508082111561052f57600080fd5b5061053c85828601610447565b9150509250929050565b60006020828403121561055857600080fd5b81356001600160a01b038116811461056f57600080fd5b9392505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b634e487b7160e01b600052603260045260246000fd5b60006000198214156105e357634e487b7160e01b600052601160045260246000fd5b506001019056fea2646970667358221220b4b548c7e79001888410cda47e306b453ec13dce793be41b556550ab39de4ea064736f6c63430008090033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "getVolatility(uint256)": {
+        "returns": {
+          "_0": "volatility"
+        }
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      },
+      "updateVolatility(uint256[],uint256[])": {
+        "params": {
+          "strikes": "strikes",
+          "vols": "volatilities"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getVolatility(uint256)": {
+        "notice": "Gets the volatility of dpx"
+      },
+      "updateVolatility(uint256[],uint256[])": {
+        "notice": "Updates the volatility"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3344,
+        "contract": "contracts/oracle/ETHVolatilityOracle.sol:ETHVolatilityOracle",
+        "label": "_owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 30574,
+        "contract": "contracts/oracle/ETHVolatilityOracle.sol:ETHVolatilityOracle",
+        "label": "strikeToVols",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_uint256,t_uint256)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_uint256,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

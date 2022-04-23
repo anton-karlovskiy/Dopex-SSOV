@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 // Interfaces
 import {IOracle} from '../interfaces/IOracle.sol';
-import {IChainlinkV3Aggregator} from '../interfaces/IChainlinkV3Aggregator.sol';
+import {IChainlinkV3Aggregator} from '../external/interfaces/IChainlinkV3Aggregator.sol';
 
 contract ChainlinkUSDAdapter is IOracle {
     /// @notice the asset with the price oracle
@@ -22,6 +22,7 @@ contract ChainlinkUSDAdapter is IOracle {
         aggregator = IChainlinkV3Aggregator(_aggregator);
     }
 
+    /// @dev adjusts the precision of a uint
     function adjustDecimal(
         uint256 balance,
         uint8 org,

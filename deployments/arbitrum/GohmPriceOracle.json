@@ -1,0 +1,132 @@
+{
+  "address": "0x6cB7D5BD21664E0201347bD93D66ce18Bc48A807",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "OHM_INDEX_CHAINLINK_AGGREGATOR",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "OHMv2_CHAINLINK_AGGREGATOR",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getOHMIndex",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getOHMv2PriceInUSD",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getPriceInUSD",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x5207f95fded4498e88a9448a675d3cd020dbabaa4e789a3bdb6fad3ab331f714",
+  "receipt": {
+    "to": null,
+    "from": "0xDe485812E28824e542B9c2270B6b8eD9232B7D0b",
+    "contractAddress": "0x6cB7D5BD21664E0201347bD93D66ce18Bc48A807",
+    "transactionIndex": 0,
+    "gasUsed": "4267621",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x679201fdb25337c2e395ed5cde686bfa8decf112beae931900b82f80820dc642",
+    "transactionHash": "0x5207f95fded4498e88a9448a675d3cd020dbabaa4e789a3bdb6fad3ab331f714",
+    "logs": [],
+    "blockNumber": 4844428,
+    "cumulativeGasUsed": "2319521",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "2ec5ac8cf0dddbb0d5b131d06702454c",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"OHM_INDEX_CHAINLINK_AGGREGATOR\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"OHMv2_CHAINLINK_AGGREGATOR\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getOHMIndex\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getOHMv2PriceInUSD\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getPriceInUSD\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getOHMIndex()\":{\"returns\":{\"_0\":\"the current index of OHM in 1e9 precision\"}},\"getOHMv2PriceInUSD()\":{\"returns\":{\"_0\":\"the price of OHM (v2) in USD in 1e8 precision\"}},\"getPriceInUSD()\":{\"returns\":{\"_0\":\"price of gOHM in USD in 1e8 precision\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getOHMIndex()\":{\"notice\":\"Gets the current index of OHM\"},\"getOHMv2PriceInUSD()\":{\"notice\":\"Gets the price of OHM (v2) in USD\"},\"getPriceInUSD()\":{\"notice\":\"Gets the price of gOHM in USD\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/oracle/GohmPriceOracle.sol\":\"GohmPriceOracle\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/external/interfaces/IChainlinkV3Aggregator.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity ^0.8.0;\\n\\ninterface IChainlinkV3Aggregator {\\n  function decimals() external view returns (uint8);\\n\\n  function latestRoundData()\\n    external\\n    view\\n    returns (\\n      uint80 roundId,\\n      int256 answer,\\n      uint256 startedAt,\\n      uint256 updatedAt,\\n      uint80 answeredInRound\\n    );\\n}\\n\",\"keccak256\":\"0xff14f63ad3e2cc08f8e21ec573b82bfd7402f99309f62b657105c2fc6ef3a168\",\"license\":\"UNLICENSED\"},\"contracts/oracle/GohmPriceOracle.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity ^0.8.0;\\n\\n// Interfaces\\nimport {IChainlinkV3Aggregator} from '../external/interfaces/IChainlinkV3Aggregator.sol';\\n\\ncontract GohmPriceOracle {\\n    /*==== PUBLIC VARS ====*/\\n\\n    address public constant OHMv2_CHAINLINK_AGGREGATOR =\\n        0x761aaeBf021F19F198D325D7979965D0c7C9e53b;\\n\\n    address public constant OHM_INDEX_CHAINLINK_AGGREGATOR =\\n        0x48C4721354A3B29D80EF03C65E6644A37338a0B1;\\n\\n    /*==== VIEWS ====*/\\n\\n    /// @notice Gets the price of gOHM in USD\\n    /// @return price of gOHM in USD in 1e8 precision\\n    function getPriceInUSD() external view returns (uint256) {\\n        return (getOHMv2PriceInUSD() * getOHMIndex()) / 1e9;\\n    }\\n\\n    /// @notice Gets the price of OHM (v2) in USD\\n    /// @return the price of OHM (v2) in USD in 1e8 precision\\n    function getOHMv2PriceInUSD() public view returns (uint256) {\\n        (, int256 price, , , ) = IChainlinkV3Aggregator(\\n            OHMv2_CHAINLINK_AGGREGATOR\\n        ).latestRoundData();\\n\\n        return uint256(price);\\n    }\\n\\n    /// @notice Gets the current index of OHM\\n    /// @return the current index of OHM in 1e9 precision\\n    function getOHMIndex() public view returns (uint256) {\\n        (, int256 index, , , ) = IChainlinkV3Aggregator(\\n            OHM_INDEX_CHAINLINK_AGGREGATOR\\n        ).latestRoundData();\\n\\n        return uint256(index);\\n    }\\n}\\n\",\"keccak256\":\"0xbfa519f3f80d516845be849c72c973b29d32838fd3a899beec1e4016e1d2134f\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506102dc806100206000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80630bb32b021461005c5780635b3eb0d9146100775780639baa6040146100aa578063d6d7551d146100c5578063e1aa6036146100cd575b600080fd5b6100646100d5565b6040519081526020015b60405180910390f35b6100927348c4721354a3b29d80ef03c65e6644a37338a0b181565b6040516001600160a01b03909116815260200161006e565b61009273761aaebf021f19f198d325d7979965d0c7c9e53b81565b610064610168565b6100646101b8565b60008073761aaebf021f19f198d325d7979965d0c7c9e53b6001600160a01b031663feaf968c6040518163ffffffff1660e01b815260040160a06040518083038186803b15801561012557600080fd5b505afa158015610139573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061015d9190610207565b509195945050505050565b6000807348c4721354a3b29d80ef03c65e6644a37338a0b16001600160a01b031663feaf968c6040518163ffffffff1660e01b815260040160a06040518083038186803b15801561012557600080fd5b6000633b9aca006101c7610168565b6101cf6100d5565b6101d99190610257565b6101e39190610284565b905090565b805169ffffffffffffffffffff8116811461020257600080fd5b919050565b600080600080600060a0868803121561021f57600080fd5b610228866101e8565b945060208601519350604086015192506060860151915061024b608087016101e8565b90509295509295909350565b600081600019048311821515161561027f57634e487b7160e01b600052601160045260246000fd5b500290565b6000826102a157634e487b7160e01b600052601260045260246000fd5b50049056fea264697066735822122068a56b5bb018a31e9ca00934ffd480ffb502491c94d2e94e519ae5712ff1ed2a64736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c80630bb32b021461005c5780635b3eb0d9146100775780639baa6040146100aa578063d6d7551d146100c5578063e1aa6036146100cd575b600080fd5b6100646100d5565b6040519081526020015b60405180910390f35b6100927348c4721354a3b29d80ef03c65e6644a37338a0b181565b6040516001600160a01b03909116815260200161006e565b61009273761aaebf021f19f198d325d7979965d0c7c9e53b81565b610064610168565b6100646101b8565b60008073761aaebf021f19f198d325d7979965d0c7c9e53b6001600160a01b031663feaf968c6040518163ffffffff1660e01b815260040160a06040518083038186803b15801561012557600080fd5b505afa158015610139573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061015d9190610207565b509195945050505050565b6000807348c4721354a3b29d80ef03c65e6644a37338a0b16001600160a01b031663feaf968c6040518163ffffffff1660e01b815260040160a06040518083038186803b15801561012557600080fd5b6000633b9aca006101c7610168565b6101cf6100d5565b6101d99190610257565b6101e39190610284565b905090565b805169ffffffffffffffffffff8116811461020257600080fd5b919050565b600080600080600060a0868803121561021f57600080fd5b610228866101e8565b945060208601519350604086015192506060860151915061024b608087016101e8565b90509295509295909350565b600081600019048311821515161561027f57634e487b7160e01b600052601160045260246000fd5b500290565b6000826102a157634e487b7160e01b600052601260045260246000fd5b50049056fea264697066735822122068a56b5bb018a31e9ca00934ffd480ffb502491c94d2e94e519ae5712ff1ed2a64736f6c63430008090033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "getOHMIndex()": {
+        "returns": {
+          "_0": "the current index of OHM in 1e9 precision"
+        }
+      },
+      "getOHMv2PriceInUSD()": {
+        "returns": {
+          "_0": "the price of OHM (v2) in USD in 1e8 precision"
+        }
+      },
+      "getPriceInUSD()": {
+        "returns": {
+          "_0": "price of gOHM in USD in 1e8 precision"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getOHMIndex()": {
+        "notice": "Gets the current index of OHM"
+      },
+      "getOHMv2PriceInUSD()": {
+        "notice": "Gets the price of OHM (v2) in USD"
+      },
+      "getPriceInUSD()": {
+        "notice": "Gets the price of gOHM in USD"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

@@ -1,17 +1,22 @@
-#node files
+# node files
 node_modules
 
-#hardhat files
+# hardhat files
 cache
 artifacts
 types
-deployments
+deployments/arbitrum-rinkeby
+deployments/kovan
 
-#env
+# env
 .env
 
 # vscode settings
 .vscode
+
+
+# coverage
+coverage
 
 # playground
 playground.ts

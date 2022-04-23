@@ -1,0 +1,210 @@
+{
+  "address": "0xFA70F2abaa4eFb12BE6E3B4418c7d8c2db002D43",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "getVolatility",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "lastVolatility",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "v",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateVolatility",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xa18023cb4e6cbb560e1e7765d91ad4f88888faa1665d8f447fea5193d1e3e9a8",
+  "receipt": {
+    "to": null,
+    "from": "0xDe485812E28824e542B9c2270B6b8eD9232B7D0b",
+    "contractAddress": "0xFA70F2abaa4eFb12BE6E3B4418c7d8c2db002D43",
+    "transactionIndex": 44,
+    "gasUsed": "282569",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000020000000000000000000800000000000000000000000000000000400000000000000000000000000000000000000020000000000000000000000000000000000000000400000000000000000000000200000000000000000000000000000000002000000000000000100000000000000000000000000000000020000000020000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xfac6bd34d891cb54668330be237adf20cc506ac7b88a33915780211d97ae68f9",
+    "transactionHash": "0xa18023cb4e6cbb560e1e7765d91ad4f88888faa1665d8f447fea5193d1e3e9a8",
+    "logs": [
+      {
+        "transactionIndex": 44,
+        "blockNumber": 13712238,
+        "transactionHash": "0xa18023cb4e6cbb560e1e7765d91ad4f88888faa1665d8f447fea5193d1e3e9a8",
+        "address": "0xFA70F2abaa4eFb12BE6E3B4418c7d8c2db002D43",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x000000000000000000000000de485812e28824e542b9c2270b6b8ed9232b7d0b"
+        ],
+        "data": "0x",
+        "logIndex": 19,
+        "blockHash": "0xfac6bd34d891cb54668330be237adf20cc506ac7b88a33915780211d97ae68f9"
+      }
+    ],
+    "blockNumber": 13712238,
+    "cumulativeGasUsed": "1714184",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "e36b2af622afba709349df547e98e9e8",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"getVolatility\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lastVolatility\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"v\",\"type\":\"uint256\"}],\"name\":\"updateVolatility\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getVolatility()\":{\"returns\":{\"_0\":\"volatility\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"},\"updateVolatility(uint256)\":{\"params\":{\"v\":\"volatility\"},\"returns\":{\"_0\":\"volatility of dpx\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getVolatility()\":{\"notice\":\"Gets the volatility of dpx\"},\"updateVolatility(uint256)\":{\"notice\":\"Updates the last volatility for DPX\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/oracle/VolatilityOracle.sol\":\"VolatilityOracle\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.0 (access/Ownable.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor() {\\n        _transferOwnership(_msgSender());\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby removing any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        _transferOwnership(address(0));\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        _transferOwnership(newOwner);\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Internal function without access restriction.\\n     */\\n    function _transferOwnership(address newOwner) internal virtual {\\n        address oldOwner = _owner;\\n        _owner = newOwner;\\n        emit OwnershipTransferred(oldOwner, newOwner);\\n    }\\n}\\n\",\"keccak256\":\"0xa1b27b3f44ff825974e5268e8f63ad3b03add5b464880d860fbb8cae043e17f7\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.0 (utils/Context.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0x7736c187e6f1358c1ea9350a2a21aa8528dec1c2f43b374a9067465a3a51f5d3\",\"license\":\"MIT\"},\"contracts/interfaces/IVolatilityOracle.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity ^0.8.0;\\n\\ninterface IVolatilityOracle {\\n    function getVolatility() external returns (uint256);\\n}\\n\",\"keccak256\":\"0x96127f4dceb6d8a499a67eebea3ca4d452f0c17332c7fab2ccd55e438ff0e983\",\"license\":\"UNLICENSED\"},\"contracts/oracle/VolatilityOracle.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity ^0.8.0;\\n\\n// Contracts\\nimport {Ownable} from '@openzeppelin/contracts/access/Ownable.sol';\\n\\n// Interfaces\\nimport {IVolatilityOracle} from '../interfaces/IVolatilityOracle.sol';\\n\\ncontract VolatilityOracle is Ownable, IVolatilityOracle {\\n    /*==== PUBLIC VARS ====*/\\n\\n    uint256 public lastVolatility;\\n\\n    /*==== SETTER FUNCTIONS (ONLY OWNER) ====*/\\n\\n    /**\\n     * @notice Updates the last volatility for DPX\\n     * @param v volatility\\n     * @return volatility of dpx\\n     */\\n    function updateVolatility(uint256 v) external onlyOwner returns (uint256) {\\n        require(v != 0, 'VolatilityOracle: Volatility cannot be 0');\\n\\n        lastVolatility = v;\\n\\n        return v;\\n    }\\n\\n    /*==== VIEWS ====*/\\n\\n    /**\\n     * @notice Gets the volatility of dpx\\n     * @return volatility\\n     */\\n    function getVolatility() external view override returns (uint256) {\\n        require(lastVolatility != 0, 'VolatilityOracle: Last volatility == 0');\\n\\n        return lastVolatility;\\n    }\\n}\\n\",\"keccak256\":\"0x36e0bad1b2f0ff3d0a80ae5eea9a95913766847f0334b88de28a873b6e8b3cfd\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061001a3361001f565b61006f565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6103b18061007e6000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c80632834a7c8146100675780633af2888b1461008d578063715018a6146100955780638843be741461009f5780638da5cb5b146100a8578063f2fde38b146100c3575b600080fd5b61007a6100753660046102fd565b6100d6565b6040519081526020015b60405180910390f35b61007a610171565b61009d6101dc565b005b61007a60015481565b6000546040516001600160a01b039091168152602001610084565b61009d6100d1366004610316565b610212565b600080546001600160a01b0316331461010a5760405162461bcd60e51b815260040161010190610346565b60405180910390fd5b816101685760405162461bcd60e51b815260206004820152602860248201527f566f6c6174696c6974794f7261636c653a20566f6c6174696c6974792063616e60448201526706e6f7420626520360c41b6064820152608401610101565b50600181905590565b6000600154600014156101d55760405162461bcd60e51b815260206004820152602660248201527f566f6c6174696c6974794f7261636c653a204c61737420766f6c6174696c6974604482015265079203d3d20360d41b6064820152608401610101565b5060015490565b6000546001600160a01b031633146102065760405162461bcd60e51b815260040161010190610346565b61021060006102ad565b565b6000546001600160a01b0316331461023c5760405162461bcd60e51b815260040161010190610346565b6001600160a01b0381166102a15760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610101565b6102aa816102ad565b50565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b60006020828403121561030f57600080fd5b5035919050565b60006020828403121561032857600080fd5b81356001600160a01b038116811461033f57600080fd5b9392505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260408201526060019056fea2646970667358221220f5e1cae33c43427846bb9b1aa2794fa76585c9bf4c7e3aaa96fe5fc31420800a64736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c80632834a7c8146100675780633af2888b1461008d578063715018a6146100955780638843be741461009f5780638da5cb5b146100a8578063f2fde38b146100c3575b600080fd5b61007a6100753660046102fd565b6100d6565b6040519081526020015b60405180910390f35b61007a610171565b61009d6101dc565b005b61007a60015481565b6000546040516001600160a01b039091168152602001610084565b61009d6100d1366004610316565b610212565b600080546001600160a01b0316331461010a5760405162461bcd60e51b815260040161010190610346565b60405180910390fd5b816101685760405162461bcd60e51b815260206004820152602860248201527f566f6c6174696c6974794f7261636c653a20566f6c6174696c6974792063616e60448201526706e6f7420626520360c41b6064820152608401610101565b50600181905590565b6000600154600014156101d55760405162461bcd60e51b815260206004820152602660248201527f566f6c6174696c6974794f7261636c653a204c61737420766f6c6174696c6974604482015265079203d3d20360d41b6064820152608401610101565b5060015490565b6000546001600160a01b031633146102065760405162461bcd60e51b815260040161010190610346565b61021060006102ad565b565b6000546001600160a01b0316331461023c5760405162461bcd60e51b815260040161010190610346565b6001600160a01b0381166102a15760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610101565b6102aa816102ad565b50565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b60006020828403121561030f57600080fd5b5035919050565b60006020828403121561032857600080fd5b81356001600160a01b038116811461033f57600080fd5b9392505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260408201526060019056fea2646970667358221220f5e1cae33c43427846bb9b1aa2794fa76585c9bf4c7e3aaa96fe5fc31420800a64736f6c63430008090033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "getVolatility()": {
+        "returns": {
+          "_0": "volatility"
+        }
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      },
+      "updateVolatility(uint256)": {
+        "params": {
+          "v": "volatility"
+        },
+        "returns": {
+          "_0": "volatility of dpx"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getVolatility()": {
+        "notice": "Gets the volatility of dpx"
+      },
+      "updateVolatility(uint256)": {
+        "notice": "Updates the last volatility for DPX"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3344,
+        "contract": "contracts/oracle/VolatilityOracle.sol:VolatilityOracle",
+        "label": "_owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 28459,
+        "contract": "contracts/oracle/VolatilityOracle.sol:VolatilityOracle",
+        "label": "lastVolatility",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "address": "0xB964912B4054E8FB54431ed952F29aE3c8B3DEAC",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "PurchaseFeePercentageUpdate",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "SettlementFeePercentageUpdate",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "calculatePurchaseFees",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "finalFee",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "calculateSettlementFees",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "finalFee",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "purchaseFeePercentage",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "settlementFeePercentage",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "newFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "updatePurchaseFeePercentage",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "newFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateSettlementFeePercentage",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x90b5608b02fc4344cb62f4950f5ceb903549715071ef518db78d9a9219507b3e",
+  "receipt": {
+    "to": null,
+    "from": "0xDe485812E28824e542B9c2270B6b8eD9232B7D0b",
+    "contractAddress": "0xB964912B4054E8FB54431ed952F29aE3c8B3DEAC",
+    "transactionIndex": 0,
+    "gasUsed": "11215042",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000800000040000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000001000000000000000000000000000000000000020000000000000000000800000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000040002000000000000000100000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x75e975e466936f9c7f123f16983db6cd72d7cf6529d53b813faba40c7be2dfc7",
+    "transactionHash": "0x90b5608b02fc4344cb62f4950f5ceb903549715071ef518db78d9a9219507b3e",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 4347656,
+        "transactionHash": "0x90b5608b02fc4344cb62f4950f5ceb903549715071ef518db78d9a9219507b3e",
+        "address": "0xB964912B4054E8FB54431ed952F29aE3c8B3DEAC",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x000000000000000000000000de485812e28824e542b9c2270b6b8ed9232b7d0b"
+        ],
+        "data": "0x",
+        "logIndex": 0,
+        "blockHash": "0x75e975e466936f9c7f123f16983db6cd72d7cf6529d53b813faba40c7be2dfc7"
+      }
+    ],
+    "blockNumber": 4347656,
+    "cumulativeGasUsed": "8232402",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "d018765b2b6268317bd69e18dbfa38aa",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"newFee\",\"type\":\"uint256\"}],\"name\":\"PurchaseFeePercentageUpdate\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"newFee\",\"type\":\"uint256\"}],\"name\":\"SettlementFeePercentageUpdate\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"calculatePurchaseFees\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"finalFee\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"calculateSettlementFees\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"finalFee\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"purchaseFeePercentage\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"settlementFeePercentage\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newFee\",\"type\":\"uint256\"}],\"name\":\"updatePurchaseFeePercentage\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newFee\",\"type\":\"uint256\"}],\"name\":\"updateSettlementFeePercentage\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"calculatePurchaseFees(uint256,uint256,uint256)\":{\"params\":{\"amount\":\"amount of options being bought\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"},\"updatePurchaseFeePercentage(uint256)\":{\"details\":\"Can only be called by owner\",\"params\":{\"newFee\":\"The new fee\"},\"returns\":{\"_0\":\"Whether it was successfully updated\"}},\"updateSettlementFeePercentage(uint256)\":{\"details\":\"Can only be called by owner\",\"params\":{\"newFee\":\"The new fee\"},\"returns\":{\"_0\":\"Whether it was successfully updated\"}}},\"stateVariables\":{\"purchaseFeePercentage\":{\"details\":\"Purchase Fee: x% of the price of the underlying asset * the amount of options being bought * OTM Fee Multiplier\"},\"settlementFeePercentage\":{\"details\":\"Settlement Fee: x% of the settlement price\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"calculatePurchaseFees(uint256,uint256,uint256)\":{\"notice\":\"Calculate Fees for purchase\"},\"calculateSettlementFees(uint256,uint256,uint256)\":{\"notice\":\"Calculate Fees for settlement\"},\"updatePurchaseFeePercentage(uint256)\":{\"notice\":\"Update the purchase fee percentage\"},\"updateSettlementFeePercentage(uint256)\":{\"notice\":\"Update the settlement fee percentage\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/fees/FeeStrategy3.sol\":\"FeeStrategy3\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.0 (access/Ownable.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor() {\\n        _transferOwnership(_msgSender());\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby removing any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        _transferOwnership(address(0));\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        _transferOwnership(newOwner);\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Internal function without access restriction.\\n     */\\n    function _transferOwnership(address newOwner) internal virtual {\\n        address oldOwner = _owner;\\n        _owner = newOwner;\\n        emit OwnershipTransferred(oldOwner, newOwner);\\n    }\\n}\\n\",\"keccak256\":\"0xa1b27b3f44ff825974e5268e8f63ad3b03add5b464880d860fbb8cae043e17f7\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.0 (utils/Context.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0x7736c187e6f1358c1ea9350a2a21aa8528dec1c2f43b374a9067465a3a51f5d3\",\"license\":\"MIT\"},\"contracts/fees/FeeStrategy3.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity ^0.8.0;\\n\\n// Contracts\\nimport {Ownable} from '@openzeppelin/contracts/access/Ownable.sol';\\n\\n// Interfaces\\nimport {IFeeStrategy} from './IFeeStrategy.sol';\\n\\ncontract FeeStrategy3 is Ownable, IFeeStrategy {\\n    /// @dev Purchase Fee: x% of the price of the underlying asset * the amount of options being bought * OTM Fee Multiplier\\n    uint256 public purchaseFeePercentage = 1e8 / 10; // 0.1%\\n\\n    /// @dev Settlement Fee: x% of the settlement price\\n    uint256 public settlementFeePercentage = 1e8 / 10; // 0.1%\\n\\n    event PurchaseFeePercentageUpdate(uint256 newFee);\\n\\n    event SettlementFeePercentageUpdate(uint256 newFee);\\n\\n    /// @notice Update the purchase fee percentage\\n    /// @dev Can only be called by owner\\n    /// @param newFee The new fee\\n    /// @return Whether it was successfully updated\\n    function updatePurchaseFeePercentage(uint256 newFee)\\n        external\\n        onlyOwner\\n        returns (bool)\\n    {\\n        purchaseFeePercentage = newFee;\\n        emit PurchaseFeePercentageUpdate(newFee);\\n        return true;\\n    }\\n\\n    /// @notice Update the settlement fee percentage\\n    /// @dev Can only be called by owner\\n    /// @param newFee The new fee\\n    /// @return Whether it was successfully updated\\n    function updateSettlementFeePercentage(uint256 newFee)\\n        external\\n        onlyOwner\\n        returns (bool)\\n    {\\n        settlementFeePercentage = newFee;\\n        emit SettlementFeePercentageUpdate(newFee);\\n        return true;\\n    }\\n\\n    /// @notice Calculate Fees for purchase\\n    /// @param amount amount of options being bought\\n    function calculatePurchaseFees(\\n        uint256,\\n        uint256,\\n        uint256 amount\\n    ) external view returns (uint256 finalFee) {\\n        finalFee = (purchaseFeePercentage * amount) / 1e10;\\n    }\\n\\n    /// @notice Calculate Fees for settlement\\n    function calculateSettlementFees(\\n        uint256,\\n        uint256,\\n        uint256\\n    ) external view returns (uint256 finalFee) {\\n        finalFee = settlementFeePercentage * 0;\\n    }\\n}\\n\",\"keccak256\":\"0x45e35766d350cf11fc7865542f3ed4565fb097715422da66788c439c9f00a4fa\",\"license\":\"UNLICENSED\"},\"contracts/fees/IFeeStrategy.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity ^0.8.0;\\n\\ninterface IFeeStrategy {\\n    function calculatePurchaseFees(\\n        uint256,\\n        uint256,\\n        uint256\\n    ) external view returns (uint256);\\n\\n    function calculateSettlementFees(\\n        uint256,\\n        uint256,\\n        uint256\\n    ) external view returns (uint256);\\n}\\n\",\"keccak256\":\"0xb2e20a42b7d1f8c0a2b43f4c80acfd6b7589f9a30df37855ec0ef9b036ed5aa5\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x6080604052629896806001556298968060025534801561001e57600080fd5b506100283361002d565b61007d565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6104af8061008c6000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c80638da5cb5b116100665780638da5cb5b146100f4578063e8468ee41461010f578063f2fde38b14610122578063f3fa349514610135578063f72bf8fe1461013e57600080fd5b806329520cae146100985780633df8cd72146100c05780636efb0961146100d7578063715018a6146100ea575b600080fd5b6100ab6100a6366004610380565b610151565b60405190151581526020015b60405180910390f35b6100c960015481565b6040519081526020016100b7565b6100ab6100e5366004610380565b6101c6565b6100f2610226565b005b6000546040516001600160a01b0390911681526020016100b7565b6100c961011d366004610399565b61025c565b6100f26101303660046103c5565b610284565b6100c960025481565b6100c961014c366004610399565b61031f565b600080546001600160a01b031633146101855760405162461bcd60e51b815260040161017c906103f5565b60405180910390fd5b60018290556040518281527f88c8f67db38a241af42dba37213346faea29bb6f89bce646dbcd9f99ee352690906020015b60405180910390a1506001919050565b600080546001600160a01b031633146101f15760405162461bcd60e51b815260040161017c906103f5565b60028290556040518281527f0e8e71e7bd900df8f81533097de2d408d5ba1e61b99e7c72aea4bf24c766ed0e906020016101b6565b6000546001600160a01b031633146102505760405162461bcd60e51b815260040161017c906103f5565b61025a6000610330565b565b60006402540be40082600154610272919061042a565b61027c9190610457565b949350505050565b6000546001600160a01b031633146102ae5760405162461bcd60e51b815260040161017c906103f5565b6001600160a01b0381166103135760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b606482015260840161017c565b61031c81610330565b50565b6000600254600061027c919061042a565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b60006020828403121561039257600080fd5b5035919050565b6000806000606084860312156103ae57600080fd5b505081359360208301359350604090920135919050565b6000602082840312156103d757600080fd5b81356001600160a01b03811681146103ee57600080fd5b9392505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b600081600019048311821515161561045257634e487b7160e01b600052601160045260246000fd5b500290565b60008261047457634e487b7160e01b600052601260045260246000fd5b50049056fea26469706673582212201b9981364478ed05bb0002057a5aafa10da44bf96f226e4af751e26623036e2764736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100935760003560e01c80638da5cb5b116100665780638da5cb5b146100f4578063e8468ee41461010f578063f2fde38b14610122578063f3fa349514610135578063f72bf8fe1461013e57600080fd5b806329520cae146100985780633df8cd72146100c05780636efb0961146100d7578063715018a6146100ea575b600080fd5b6100ab6100a6366004610380565b610151565b60405190151581526020015b60405180910390f35b6100c960015481565b6040519081526020016100b7565b6100ab6100e5366004610380565b6101c6565b6100f2610226565b005b6000546040516001600160a01b0390911681526020016100b7565b6100c961011d366004610399565b61025c565b6100f26101303660046103c5565b610284565b6100c960025481565b6100c961014c366004610399565b61031f565b600080546001600160a01b031633146101855760405162461bcd60e51b815260040161017c906103f5565b60405180910390fd5b60018290556040518281527f88c8f67db38a241af42dba37213346faea29bb6f89bce646dbcd9f99ee352690906020015b60405180910390a1506001919050565b600080546001600160a01b031633146101f15760405162461bcd60e51b815260040161017c906103f5565b60028290556040518281527f0e8e71e7bd900df8f81533097de2d408d5ba1e61b99e7c72aea4bf24c766ed0e906020016101b6565b6000546001600160a01b031633146102505760405162461bcd60e51b815260040161017c906103f5565b61025a6000610330565b565b60006402540be40082600154610272919061042a565b61027c9190610457565b949350505050565b6000546001600160a01b031633146102ae5760405162461bcd60e51b815260040161017c906103f5565b6001600160a01b0381166103135760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b606482015260840161017c565b61031c81610330565b50565b6000600254600061027c919061042a565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b60006020828403121561039257600080fd5b5035919050565b6000806000606084860312156103ae57600080fd5b505081359360208301359350604090920135919050565b6000602082840312156103d757600080fd5b81356001600160a01b03811681146103ee57600080fd5b9392505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b600081600019048311821515161561045257634e487b7160e01b600052601160045260246000fd5b500290565b60008261047457634e487b7160e01b600052601260045260246000fd5b50049056fea26469706673582212201b9981364478ed05bb0002057a5aafa10da44bf96f226e4af751e26623036e2764736f6c63430008090033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "calculatePurchaseFees(uint256,uint256,uint256)": {
+        "params": {
+          "amount": "amount of options being bought"
+        }
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      },
+      "updatePurchaseFeePercentage(uint256)": {
+        "details": "Can only be called by owner",
+        "params": {
+          "newFee": "The new fee"
+        },
+        "returns": {
+          "_0": "Whether it was successfully updated"
+        }
+      },
+      "updateSettlementFeePercentage(uint256)": {
+        "details": "Can only be called by owner",
+        "params": {
+          "newFee": "The new fee"
+        },
+        "returns": {
+          "_0": "Whether it was successfully updated"
+        }
+      }
+    },
+    "stateVariables": {
+      "purchaseFeePercentage": {
+        "details": "Purchase Fee: x% of the price of the underlying asset * the amount of options being bought * OTM Fee Multiplier"
+      },
+      "settlementFeePercentage": {
+        "details": "Settlement Fee: x% of the settlement price"
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "calculatePurchaseFees(uint256,uint256,uint256)": {
+        "notice": "Calculate Fees for purchase"
+      },
+      "calculateSettlementFees(uint256,uint256,uint256)": {
+        "notice": "Calculate Fees for settlement"
+      },
+      "updatePurchaseFeePercentage(uint256)": {
+        "notice": "Update the purchase fee percentage"
+      },
+      "updateSettlementFeePercentage(uint256)": {
+        "notice": "Update the settlement fee percentage"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3344,
+        "contract": "contracts/fees/FeeStrategy3.sol:FeeStrategy3",
+        "label": "_owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 44082,
+        "contract": "contracts/fees/FeeStrategy3.sol:FeeStrategy3",
+        "label": "purchaseFeePercentage",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 44088,
+        "contract": "contracts/fees/FeeStrategy3.sol:FeeStrategy3",
+        "label": "settlementFeePercentage",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

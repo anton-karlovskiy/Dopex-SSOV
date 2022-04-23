@@ -2,26 +2,16 @@
 pragma solidity ^0.8.0;
 
 // Interfaces
-import {IERC20} from '../interfaces/IERC20.sol';
+import {IERC20} from '../external/interfaces/IERC20.sol';
 import {IPriceOracleAggregator} from '../interfaces/IPriceOracleAggregator.sol';
 import {IOracle} from '../interfaces/IOracle.sol';
 
-contract PriceOracleAggregator is IPriceOracleAggregator {
-    /// @dev admin allowed to update price oracle
-    address public immutable admin;
+// Contracts
+import {Ownable} from '@openzeppelin/contracts/access/Ownable.sol';
 
+contract PriceOracleAggregator is IPriceOracleAggregator, Ownable {
     /// @notice token to the oracle address
     mapping(address => IOracle) public assetToOracle;
-
-    modifier onlyAdmin() {
-        require(msg.sender == admin, 'ONLY_ADMIN');
-        _;
-    }
-
-    constructor(address _admin) {
-        require(_admin != address(0), 'INVALID_ADMIN');
-        admin = _admin;
-    }
 
     /// @notice adds oracle for an asset e.g. ETH
     /// @param _asset the oracle for the asset
@@ -29,9 +19,12 @@ contract PriceOracleAggregator is IPriceOracleAggregator {
     function updateOracleForAsset(address _asset, IOracle _oracle)
         external
         override
-        onlyAdmin
+        onlyOwner
     {
-        require(address(_oracle) != address(0), 'INVALID_ORACLE');
+        require(
+            address(_oracle) != address(0),
+            'PriceOracleAggregator: Oracle address cannot be zero address'
+        );
         assetToOracle[_asset] = _oracle;
         emit UpdateOracle(_asset, _oracle);
     }
@@ -39,8 +32,16 @@ contract PriceOracleAggregator is IPriceOracleAggregator {
     /// @notice returns price of token in USD in 1e8 decimals
     /// @param _token token to fetch price
     function getPriceInUSD(address _token) external override returns (uint256) {
-        require(address(assetToOracle[_token]) != address(0), 'INVALID_ORACLE');
-        return assetToOracle[_token].getPriceInUSD();
+        require(
+            address(assetToOracle[_token]) != address(0),
+            'PriceOracleAggregator: Oracle address cannot be zero address'
+        );
+
+        uint256 price = assetToOracle[_token].getPriceInUSD();
+
+        require(price > 0, 'PriceOracleAggregator: Price cannot be 0');
+
+        return price;
     }
 
     /// @notice returns price of token in USD
@@ -51,7 +52,10 @@ contract PriceOracleAggregator is IPriceOracleAggregator {
         override
         returns (uint256)
     {
-        require(address(assetToOracle[_token]) != address(0), 'INVALID_ORACLE');
+        require(
+            address(assetToOracle[_token]) != address(0),
+            'PriceOracleAggregator: Oracle address cannot be zero address'
+        );
         return assetToOracle[_token].viewPriceInUSD();
     }
 }
